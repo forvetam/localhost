@@ -1,5 +1,5 @@
 <?php
 
-echo "(o^o)";
+echo "changes made from home";
 
 ?>
