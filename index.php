@@ -1,6 +1,7 @@
 <?php
 
 // echo "changes made from home";
-echo php_uname();
+echo "<img src='http://localhost/леди.png'>";
+//echo php_uname();
 
 ?>
