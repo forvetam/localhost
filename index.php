@@ -5,7 +5,12 @@ $url = "https://official-joke-api.appspot.com/jokes/programming/random";
 $json = json_decode(substr(substr(file_get_contents($url), 1), 0, strlen ($str)-1));
 $setup_joke = $json->setup;
 $punchline_joke = $json->punchline;
-
+if (PHP_OS === "Linux") { 
+	$pic = "http://localhost/localhost/октябрь.png";
+	}
+else {
+	$pic = "http://localhost/октябрь.png";
+}
 	echo <<<HTML
 		<body style="background-color: #062731">
 
@@ -18,10 +23,11 @@ $punchline_joke = $json->punchline;
 				<p>$punchline_joke</p>
 				<p>_____________________</p>
 			</div>
-			<img src='http://localhost/октябрь.png' style = "position:fixed;height:253px"/>
+			<img src=$pic style = "position:fixed;height:253px"/>
 			<div style = "position:fixed; left:108px; top:131px; font-size: 30px; color: #062731">$todayte</div>
 
 		</body>
+
 HTML;
 // echo "changes made from home";
 //echo "<img src='http://localhost/леди.png'>";
