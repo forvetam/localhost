@@ -1,15 +1,23 @@
 <!DOCTYPE HTML>
 <html>
-<body style="background-color: #062731">
+<head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body style="background-color: #F0F0F0">
 
 			<div  align="center", style = "background-color: #FFFFFF; word-wrap:break-word; width:632px; position:absolute">
-				<p><b>Лог изменений:</b></p>
-				<p>_____________________</p>
-				<p>Использован API c случайными шутками</p>
-				<p>$url</p>				
-				<p>$setup_joke</p>
-				<p>$punchline_joke</p>
-				<p>_____________________</p>
+				<p><b>Регистрация</b></p>
+				<form action="save_user.php" method="POST">
+				<p>Логин: <input type="text" name="login" /></p>
+				<p>Пароль: <input type="text" name="password" /></p>
+				<input type="submit" value="Зарегистрироваться">
+				</form>
+				<p></p>
+			</div>
+
+			<div style = "position:fixed; left:20px; top:20px">
+				<a href="http://localhost/sign_in.php" class="button">Войти</a>
 			</div>
 
 		</body>
