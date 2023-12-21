@@ -1,7 +1,7 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "root", "base");
+$mysqli = new mysqli("localhost", "root", "", "base");
 
-if ($conn == false){
+if ($mysqli == false){
     print("Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error());
 }
 else {

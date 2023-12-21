@@ -10,7 +10,7 @@
 
 			<div  align="center", style = "background-color: #FFFFFF; word-wrap:break-word; width:632px; position:absolute">
 				<p><b>Вход</b></p>
-				<form action="display.php" method="POST">
+				<form action="check_user.php" method="POST">
 				<p>Логин: <input type="text" name="login" /></p>
 				<p>Пароль: <input type="text" name="password" /></p>
 				<input type="submit" value="Войти">
